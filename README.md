@@ -39,14 +39,14 @@ Note : For all git Cmd you need to install git on your local machine.
       iMac-Pro-2 git-command-practice $   git add .
       ```
 
-       2. **git add <filename> : add specified file to the staging of git.**
+      2. **git add <filename> : add specified file to the staging of git.**
       ```git
       iMac-Pro-2 git-command-practice $   touch file4.js 
       iMac-Pro-2 git-command-practice $   touch file5.js 
       iMac-Pro-2 git-command-practice $   git add file4.js
       ```
 
-       3. **git add <filename1> <filename3> <filename3>  : add multiple specified file to the staging of git.**
+      3. **git add <filename1> <filename3> <filename3>  : add multiple specified file to the staging of git.**
       ```git
       iMac-Pro-2 git-command-practice $   touch file6.js 
       iMac-Pro-2 git-command-practice $   touch file7.js 
@@ -69,7 +69,7 @@ Note : For all git Cmd you need to install git on your local machine.
       iMac-Pro-2 git-command-practice $   git commit file1 file2 -m "First Commit"
       ```
 
-       2. **git commit  -m "<commit_message>" : commit all file that we modified and execute git add cmd.**
+      2. **git commit  -m "<commit_message>" : commit all file that we modified and execute git add cmd.**
        
        For this if we added some file already, and modified it then we need to execute git add . or git add <file1> <file2> 
       ```git
