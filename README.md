@@ -40,7 +40,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
    This command turns directory inti a empty git repository
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   mkdir git-command-practice 
       iMac-Pro-2 git-command-practice $   cd git-command-practice 
       iMac-Pro-2 git-command-practice $   git init
@@ -51,7 +51,7 @@ Note : For all git Cmd you need to install git on your local machine.
    Add files to the staging for git
  
       1. **git add . : add all file to the staging of git.**
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   touch file1.js 
       iMac-Pro-2 git-command-practice $   touch file2.js 
       iMac-Pro-2 git-command-practice $   touch file3.js 
@@ -59,14 +59,14 @@ Note : For all git Cmd you need to install git on your local machine.
       ```
 
       2. **git add <filename> : add specified file to the staging of git.**
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   touch file4.js 
       iMac-Pro-2 git-command-practice $   touch file5.js 
       iMac-Pro-2 git-command-practice $   git add file4.js
       ```
 
       3. **git add <filename1> <filename3> <filename3>  : add multiple specified file to the staging of git.**
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   touch file6.js 
       iMac-Pro-2 git-command-practice $   touch file7.js 
       iMac-Pro-2 git-command-practice $   touch file8.js 
@@ -84,14 +84,14 @@ Note : For all git Cmd you need to install git on your local machine.
 
       1. **git commit <file1> <file2> -m "<commit_message>" : commit only spacified file.**
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git commit file1 file2 -m "First Commit"
       ```
 
       2. **git commit  -m "<commit_message>" : commit all file that we modified and execute git add cmd.**
        
       For this if we added some file already, and modified it then we need to execute git add . or git add <file1> <file2> 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git commit  -m "first commit"
       ```
 
@@ -104,7 +104,7 @@ Note : For all git Cmd you need to install git on your local machine.
    If there is no changes it'll return `nothing to commit, working directory clean`. 
  
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git status
 
 
@@ -132,14 +132,14 @@ Note : For all git Cmd you need to install git on your local machine.
  
       1. **Set Global Username and Email in git config.**
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git config --global user.name "AcousticKrishna"
       iMac-Pro-2 git-command-practice $   git config --global user.email "acoustickrishna@gmail.com"
       ```
 
       2. **Set In Current Repository Username and Email in git config.**
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git config user.name "AcousticKrishna"
       iMac-Pro-2 git-command-practice $   git config user.email "acoustickrishna@gmail.com"
       ```
@@ -150,12 +150,12 @@ Note : For all git Cmd you need to install git on your local machine.
 
   This cmd show the list of branch 
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git branch
       ```
       Above cmd will show 
 
-      ```git
+      ```
       * master
       ```
       Here * denotes your current branch you are working on.
@@ -165,12 +165,12 @@ Note : For all git Cmd you need to install git on your local machine.
 
   This cmd will create a new branch but you still on the old branch.
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git branch features
       ```
       Above cmd will show 
 
-      ```git
+      ```
       features
       * master
       test1
@@ -182,12 +182,12 @@ Note : For all git Cmd you need to install git on your local machine.
 
   This cmd will switch to specified branch.
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git checkout features
       ```
       Above cmd will show 
 
-      ```git
+      ```
       * features
       master
       test1
@@ -222,7 +222,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
   finally execute `git push origin master` to show code on origin branch 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git merge features
       ```
       
@@ -235,12 +235,12 @@ Note : For all git Cmd you need to install git on your local machine.
   This cmd will delete branch here -d will not delete unmerge changes if there.
   its a safe delete. 
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git branch -d features
       ```
       Above cmd will show 
 
-      ```git
+      ```
      Deleted branch features (was c717736).
       ```
 
@@ -249,12 +249,12 @@ Note : For all git Cmd you need to install git on your local machine.
   This cmd will delete branch here -d will delete unmerge changes if there.
   its a not safe delete. 
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git branch -D features
       ```
       Above cmd will show 
 
-      ```git
+      ```
      Deleted branch features (was c717736).
       ```
 
@@ -262,12 +262,12 @@ Note : For all git Cmd you need to install git on your local machine.
 
   This cmd will create a new branch and also switch on new branch.
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git checkout -b features
       ```
       Above cmd will show 
 
-      ```git
+      ```
       * features
       master
       test1
@@ -278,7 +278,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
   it will clone the remote repository to the local
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git clone git@github.com:acoustickrishna/Git-Command-Practice.git
       ```
 
@@ -286,7 +286,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
   This cmd will pull the changes from specified branch to local branch
  
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git pull origin master 
       ```
 
@@ -298,24 +298,24 @@ Note : For all git Cmd you need to install git on your local machine.
   start working on the next patch, and discovered I was missing something
   then we can do this save our work to continuee in future
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git stash save "work on other task for live"
       ```
 
       This cmd will show following result on terminal
-      ```git
+      ```
       Saved working directory and index state On master:work on other task for live
       ```
 
 16. ### git stash list
 
   it will list all the saved stash 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git stash list
       ```
 
       This cmd will show following result on terminal
-      ```git
+      ```
       stash@{0}: On master: work on other task for live
       stash@{1}: On master: work on other task for live2
       ```
@@ -323,7 +323,7 @@ Note : For all git Cmd you need to install git on your local machine.
 17. ### git stash apply <stashid>
 
   it will use to apply a stash by stashid but it never remove the stash, it will be available inside stash list.
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git stash apply stash@{0}
       ```
 
@@ -332,7 +332,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
   it will use to apply a stash using the method of pop, it never the stash, after run `git stash pop` stash not avaliable inside stash list or stash will dropped.
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git stash pop
       ```
 
@@ -365,7 +365,7 @@ Note : For all git Cmd you need to install git on your local machine.
   In other world it will use to get all commit history.
 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log
       ```
   After run this cmd we will get output like this.
@@ -392,49 +392,49 @@ Note : For all git Cmd you need to install git on your local machine.
 
       some more log CMD
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --all
       ```
       You can force the log tool display all commits (regardless of the branch checked out) by using the –all option.
 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log -2 
       ```
       this cmd will show last 2 log
 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --author "krishna"
       ```
       this cmd will show by author name    
       
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --after "2014-02-01" 
       ```
       this cmd will show by log after date
   
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --before "2014-02-02"
       ```
       this cmd will show by log before date
 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --after "2014-02-01" --before "2014-02-02"
       ```
       this cmd will show by log before date and after date
 
 
-      ```git
+      ```
       iMac-Pro-2 git-command-practice $   git log --oneline
       ```
       this cmd will View Just One Line Per Commit
 
 
-       ```git
+       ```
       iMac-Pro-2 git-command-practice $   git log --pretty=format:"Commit Hash: %H, Author: %aN, Date: %aD"
       ```
       Format the Git Log Output
@@ -444,8 +444,8 @@ Note : For all git Cmd you need to install git on your local machine.
 20. ### git revert
 
   In Git, the term revert is used to revert some changes. The git revert command is used to apply revert operation. It is an undo type command. However, it is not a traditional undo alternative. It does not delete any data in this process; instead, it will create a new change with the opposite effect and thereby undo the specified commit. Generally, git revert is a commit.
-  
-      ```git
+
+      ```
       iMac-Pro-2 git-command-practice $   git stash apply stash@{0}
       ```
 
