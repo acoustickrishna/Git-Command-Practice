@@ -232,17 +232,17 @@ Note : For all git Cmd you need to install git on your local machine.
 
 10. ### git branch -d <branch_name>
 
-   This cmd will delete branch here -d will not delete unmerge changes if there.
-   its a safe delete. 
- 
-      ```
-      iMac-Pro-2 git-command-practice $   git branch -d features
-      ```
-   Above cmd will show 
+      This cmd will delete branch here -d will not delete unmerge changes if there.
+      its a safe delete. 
 
-      ```
-     Deleted branch features (was c717736).
-      ```
+            ```
+            iMac-Pro-2 git-command-practice $   git branch -d features
+            ```
+      Above cmd will show 
+
+            ```
+            Deleted branch features (was c717736).
+            ```
 
 11. ### git branch -D <branch_name>
 
