@@ -8,21 +8,24 @@ Good luck with your interview 😊
 
 ### Table of Contents
 
-| No. | Questions |
+| No. | Git Command |
 |---- | ---------
-|1  | [git init](#what-are-the-possible-ways-to-create-objects-in-javascript) |
+|1  | [git init](#git-init) |
+|1  | [git init](#git-init) |
 
+Note : For all git Cmd you need to install git on your local machine.
 
 1. ### git init Command
 
-   There are many ways to create objects in javascript as below
+   This command turns directory inti a empty git repository
 
    1. **Object constructor:**
 
-      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
-
-      ```javascript
-      var object = new Object();
+      
+      ```git
+      iMac-Pro-2 practice_git_cmd $   mkdir git-command-practice 
+      iMac-Pro-2 practice_git_cmd $   cd git-command-practice 
+      iMac-Pro-2 practice_git_cmd $   git init
       ```
 
 **[⬆ Back to Top](#table-of-contents)**
