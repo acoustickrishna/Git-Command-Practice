@@ -148,7 +148,7 @@ Note : For all git Cmd you need to install git on your local machine.
 6. ### git branch
 
 
-  This cmd show the list of branch 
+   This cmd show the list of branch 
  
       ```
       iMac-Pro-2 git-command-practice $   git branch
@@ -163,7 +163,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
 7. ### git branch <branch_name>
 
-  This cmd will create a new branch but you still on the old branch.
+   This cmd will create a new branch but you still on the old branch.
  
       ```
       iMac-Pro-2 git-command-practice $   git branch features
@@ -180,7 +180,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
 8. ### git checkout <branch_name>
 
-  This cmd will switch to specified branch.
+   This cmd will switch to specified branch.
  
       ```
       iMac-Pro-2 git-command-practice $   git checkout features
@@ -197,30 +197,30 @@ Note : For all git Cmd you need to install git on your local machine.
 
 9. ### git merge <branch_name>
 
-  This will Join two or more development histories together.
+   This will Join two or more development histories together.
  
-  Lets create a scenario we have 2 branch `master` and `features` 
-  we have a file name is `file1.js` and contain some code on `master branch` is follow.
+   Lets create a scenario we have 2 branch `master` and `features` 
+   we have a file name is `file1.js` and contain some code on `master branch` is follow.
 
       ```
       console.log("Some Console log data");
 
       ```
 
-  now we checkout on `features branch` and do some changes as follow 
+   now we checkout on `features branch` and do some changes as follow 
 
       ```
       console.log("Some Console log data");
       console.log("this is some changes");
       ```   
 
-  save it then `commit` it on `features branch` 
-  then `checkout` on `master branch`
+   save it then `commit` it on `features branch` 
+   then `checkout` on `master branch`
 
-  now We execute `git merge features` 
-  then the code inside features branch will be available inside master branch 
+   now We execute `git merge features` 
+   then the code inside features branch will be available inside master branch 
 
-  finally execute `git push origin master` to show code on origin branch 
+   finally execute `git push origin master` to show code on origin branch 
 
       ```
       iMac-Pro-2 git-command-practice $   git merge features
@@ -232,8 +232,8 @@ Note : For all git Cmd you need to install git on your local machine.
 
 10. ### git branch -d <branch_name>
 
-  This cmd will delete branch here -d will not delete unmerge changes if there.
-  its a safe delete. 
+   This cmd will delete branch here -d will not delete unmerge changes if there.
+   its a safe delete. 
  
       ```
       iMac-Pro-2 git-command-practice $   git branch -d features
@@ -246,8 +246,8 @@ Note : For all git Cmd you need to install git on your local machine.
 
 11. ### git branch -D <branch_name>
 
-  This cmd will delete branch here -d will delete unmerge changes if there.
-  its a not safe delete. 
+   This cmd will delete branch here -d will delete unmerge changes if there.
+   its a not safe delete. 
  
       ```
       iMac-Pro-2 git-command-practice $   git branch -D features
@@ -260,7 +260,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
 12. ### git checkout -b <branch_name>
 
-  This cmd will create a new branch and also switch on new branch.
+   This cmd will create a new branch and also switch on new branch.
  
       ```
       iMac-Pro-2 git-command-practice $   git checkout -b features
@@ -276,7 +276,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
 13. ### git clone <ssh-url>
 
-  it will clone the remote repository to the local
+   it will clone the remote repository to the local
  
       ```
       iMac-Pro-2 git-command-practice $   git clone git@github.com:acoustickrishna/Git-Command-Practice.git
@@ -284,7 +284,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
 14. ### git pull origin master
 
-  This cmd will pull the changes from specified branch to local branch
+   This cmd will pull the changes from specified branch to local branch
  
       ```
       iMac-Pro-2 git-command-practice $   git pull origin master 
@@ -292,29 +292,31 @@ Note : For all git Cmd you need to install git on your local machine.
 
 15. ### git stash save "<msz>"
 
-  To save changes made when they are not in state to commit them to the repository
+   To save changes made when they are not in state to commit them to the repository
 
-  lets Assume the latest commit was already done
-  start working on the next patch, and discovered I was missing something
-  then we can do this save our work to continuee in future
+   lets Assume the latest commit was already done
+   start working on the next patch, and discovered I was missing something
+   then we can do this save our work to continuee in future
 
       ```
       iMac-Pro-2 git-command-practice $   git stash save "work on other task for live"
       ```
 
-      This cmd will show following result on terminal
+   This cmd will show following result on terminal
+
       ```
       Saved working directory and index state On master:work on other task for live
       ```
 
 16. ### git stash list
 
-  it will list all the saved stash 
+   it will list all the saved stash 
+
       ```
       iMac-Pro-2 git-command-practice $   git stash list
       ```
 
-      This cmd will show following result on terminal
+   This cmd will show following result on terminal
       ```
       stash@{0}: On master: work on other task for live
       stash@{1}: On master: work on other task for live2
@@ -322,7 +324,8 @@ Note : For all git Cmd you need to install git on your local machine.
 
 17. ### git stash apply <stashid>
 
-  it will use to apply a stash by stashid but it never remove the stash, it will be available inside stash list.
+   it will use to apply a stash by stashid but it never remove the stash, it will be available inside stash list.
+      
       ```
       iMac-Pro-2 git-command-practice $   git stash apply stash@{0}
       ```
@@ -330,13 +333,13 @@ Note : For all git Cmd you need to install git on your local machine.
 
 18. ### git stash pop
 
-  it will use to apply a stash using the method of pop, it never the stash, after run `git stash pop` stash not avaliable inside stash list or stash will dropped.
+   it will use to apply a stash using the method of pop, it never the stash, after run `git stash pop` stash not avaliable inside stash list or stash will dropped.
 
       ```
       iMac-Pro-2 git-command-practice $   git stash pop
       ```
 
-      After run this cmd it will show this result
+   After run this cmd it will show this result
 
       ```
       On branch master
@@ -360,90 +363,90 @@ Note : For all git Cmd you need to install git on your local machine.
 19. ### git log
 
 
-  The Git Log tool allows you to view information about previous commits that have occurred in a project.
+   The Git Log tool allows you to view information about previous commits that have occurred in a project.
 
-  In other world it will use to get all commit history.
+   In other world it will use to get all commit history.
 
 
       ```
       iMac-Pro-2 git-command-practice $   git log
       ```
-  After run this cmd we will get output like this.
+   After run this cmd we will get output like this.
 
       ```
-            commit 2051047776ce6d1794b80be31584cb7a431fe81a (HEAD -> master, origin/master)
-            Author: indianic <indianic@indianics-iMac-Pro-2.local>
-            Date:   Fri May 7 16:15:29 2021 +0530
+      commit 2051047776ce6d1794b80be31584cb7a431fe81a (HEAD -> master, origin/master)
+      Author: indianic <indianic@indianics-iMac-Pro-2.local>
+      Date:   Fri May 7 16:15:29 2021 +0530
 
-            git merge
+      git merge
 
-            commit 15ed46aae320428f597a1a88eba0d8f34c8000fd (origin/test2branch)
-            Author: indianic <indianic@indianics-iMac-Pro-2.local>
-            Date:   Fri May 7 15:57:37 2021 +0530
+      commit 15ed46aae320428f597a1a88eba0d8f34c8000fd (origin/test2branch)
+      Author: indianic <indianic@indianics-iMac-Pro-2.local>
+      Date:   Fri May 7 15:57:37 2021 +0530
 
-            some changes
+      some changes
 
-            commit a148cc5750fb4e4660d3ad82b0ccf5efd67ec63e
-            Author: indianic <indianic@indianics-iMac-Pro-2.local>
-            Date:   Fri May 7 15:53:54 2021 +0530
+      commit a148cc5750fb4e4660d3ad82b0ccf5efd67ec63e
+      Author: indianic <indianic@indianics-iMac-Pro-2.local>
+      Date:   Fri May 7 15:53:54 2021 +0530
 
-            some chnages
+      some chnages
       ```
 
-      some more log CMD
+   some more log CMD
 
       ```
       iMac-Pro-2 git-command-practice $   git log --all
       ```
-      You can force the log tool display all commits (regardless of the branch checked out) by using the –all option.
+   You can force the log tool display all commits (regardless of the branch checked out) by using the –all option.
 
 
       ```
       iMac-Pro-2 git-command-practice $   git log -2 
       ```
-      this cmd will show last 2 log
+   this cmd will show last 2 log
 
 
       ```
       iMac-Pro-2 git-command-practice $   git log --author "krishna"
       ```
-      this cmd will show by author name    
+   this cmd will show by author name    
       
 
       ```
       iMac-Pro-2 git-command-practice $   git log --after "2014-02-01" 
       ```
-      this cmd will show by log after date
+   this cmd will show by log after date
   
 
       ```
       iMac-Pro-2 git-command-practice $   git log --before "2014-02-02"
       ```
-      this cmd will show by log before date
+   this cmd will show by log before date
 
 
       ```
       iMac-Pro-2 git-command-practice $   git log --after "2014-02-01" --before "2014-02-02"
       ```
-      this cmd will show by log before date and after date
+   this cmd will show by log before date and after date
 
 
       ```
       iMac-Pro-2 git-command-practice $   git log --oneline
       ```
-      this cmd will View Just One Line Per Commit
+   this cmd will View Just One Line Per Commit
 
 
        ```
       iMac-Pro-2 git-command-practice $   git log --pretty=format:"Commit Hash: %H, Author: %aN, Date: %aD"
       ```
-      Format the Git Log Output
+   Format the Git Log Output
 
 
 
 20. ### git revert
 
-  In Git, the term revert is used to revert some changes. The git revert command is used to apply revert operation. It is an undo type command. However, it is not a traditional undo alternative. It does not delete any data in this process; instead, it will create a new change with the opposite effect and thereby undo the specified commit. Generally, git revert is a commit.
+   In Git, the term revert is used to revert some changes. The git revert command is used to apply revert operation. It is an undo type command. However, it is not a traditional undo alternative. It does not delete any data in this process; instead, it will create a new change with the opposite effect and thereby undo the specified commit. Generally, git revert is a commit.
 
       ```
       iMac-Pro-2 git-command-practice $   git stash apply stash@{0}
