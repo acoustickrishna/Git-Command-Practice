@@ -195,5 +195,37 @@ Note : For all git Cmd you need to install git on your local machine.
       Here * denotes your current branch you are working on.
 
 
+9. ### git merge <branch_name>
+
+  This will Join two or more development histories together.
+ 
+  Lets create a scenario we have 2 branch `master` and `features` 
+  we have a file name is `file1.js` and contain some code on `master branch` is follow.
+
+      ```
+      console.log("Some Console log data");
+
+      ```
+
+  now we checkout on `features branch` and do some changes as follow 
+
+      ```
+      console.log("Some Console log data");
+      console.log("this is some changes");
+      ```   
+
+  save it then `commit` it on `features branch `
+  then `checkout` on `master branch`
+
+  now We execute `git merge features` 
+  then the code inside features branch will be available inside master branch 
+
+
+      ```git
+      iMac-Pro-2 git-command-practice $   git merge features
+      ```
+      
+    
+
 **[⬆ Back to Top](#table-of-contents)**
 
