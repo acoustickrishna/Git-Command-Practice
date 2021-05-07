@@ -238,7 +238,7 @@ Note : For all git Cmd you need to install git on your local machine.
       ```
       iMac-Pro-2 git-command-practice $   git branch -d features
       ```
-      Above cmd will show 
+   Above cmd will show 
 
       ```
      Deleted branch features (was c717736).
@@ -252,7 +252,7 @@ Note : For all git Cmd you need to install git on your local machine.
       ```
       iMac-Pro-2 git-command-practice $   git branch -D features
       ```
-      Above cmd will show 
+   Above cmd will show 
 
       ```
      Deleted branch features (was c717736).
@@ -265,14 +265,14 @@ Note : For all git Cmd you need to install git on your local machine.
       ```
       iMac-Pro-2 git-command-practice $   git checkout -b features
       ```
-      Above cmd will show 
+   Above cmd will show 
 
       ```
       * features
       master
       test1
       ```
-      Here * denotes your current branch you are working on.
+   Here * denotes your current branch you are working on.
 
 13. ### git clone <ssh-url>
 
