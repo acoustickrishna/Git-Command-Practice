@@ -14,6 +14,7 @@ Good luck for your interview 😊
 |1  | [git init](#git-init) |
 |2  | [git add](#git-add) |
 |3  | [git commit](#git-commit) |
+|3  | [git status](#git-status) |
 
 Note : For all git Cmd you need to install git on your local machine.
 
@@ -76,6 +77,35 @@ Note : For all git Cmd you need to install git on your local machine.
       iMac-Pro-2 git-command-practice $   git commit  -m "first commit"
       ```
 
+
+3. ### git status
+
+
+   This cmd returns the current state of the repository.
+   It return current branch name, modified files, untracked files and more information.
+   If there is no changes it'll return `nothing to commit, working directory clean`. 
+ 
+ 
+      ```git
+      iMac-Pro-2 git-command-practice $   git status
+
+
+      On branch master
+      Your branch is up to date with 'origin/master'.
+
+      Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+	   modified:   README.md
+
+      Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+	   file.js
+
+      ```
+
+     
+   
 
 **[⬆ Back to Top](#table-of-contents)**
 
