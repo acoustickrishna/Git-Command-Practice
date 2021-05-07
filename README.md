@@ -71,7 +71,7 @@ Note : For all git Cmd you need to install git on your local machine.
 
       2. **git commit  -m "<commit_message>" : commit all file that we modified and execute git add cmd.**
        
-       For this if we added some file already, and modified it then we need to execute git add . or git add <file1> <file2> 
+      For this if we added some file already, and modified it then we need to execute git add . or git add <file1> <file2> 
       ```git
       iMac-Pro-2 git-command-practice $   git commit  -m "first commit"
       ```
