@@ -15,7 +15,7 @@ Good luck with your interview 😊
 
 Note : For all git Cmd you need to install git on your local machine.
 
-1. ### git init Command
+1. ### git init
 
    This command turns directory inti a empty git repository
 
