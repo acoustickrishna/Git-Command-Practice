@@ -126,8 +126,74 @@ Note : For all git Cmd you need to install git on your local machine.
       iMac-Pro-2 git-command-practice $   git config user.name "AcousticKrishna"
       iMac-Pro-2 git-command-practice $   git config user.email "acoustickrishna@gmail.com"
       ```
-     
-   
+
+
+6. ### git branch
+
+
+  This cmd show the list of branch 
+ 
+      ```git
+      iMac-Pro-2 git-command-practice $   git branch
+      ```
+      Above cmd will show 
+
+      ```git
+      * master
+      ```
+      Here * denotes your current branch you are working on.
+
+
+7. ### git branch <branch_name>
+
+  This cmd will create a new branch but you still on the old branch.
+ 
+      ```git
+      iMac-Pro-2 git-command-practice $   git branch features
+      ```
+      Above cmd will show 
+
+      ```git
+      features
+      * master
+      test1
+      ```
+      Here * denotes your current branch you are working on.
+
+
+7. ### git checkout <branch_name>
+
+  This cmd will switch to specified branch.
+ 
+      ```git
+      iMac-Pro-2 git-command-practice $   git checkout features
+      ```
+      Above cmd will show 
+
+      ```git
+      * features
+      master
+      test1
+      ```
+      Here * denotes your current branch you are working on.
+
+
+8. ### git checkout <branch_name>
+
+  This cmd will switch to specified branch.
+ 
+      ```git
+      iMac-Pro-2 git-command-practice $   git checkout features
+      ```
+      Above cmd will show 
+
+      ```git
+      * features
+      master
+      test1
+      ```
+      Here * denotes your current branch you are working on.
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
