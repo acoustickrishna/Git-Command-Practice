@@ -14,7 +14,8 @@ Good luck for your interview 😊
 |1  | [git init](#git-init) |
 |2  | [git add](#git-add) |
 |3  | [git commit](#git-commit) |
-|3  | [git status](#git-status) |
+|4  | [git status](#git-status) |
+|5  | [git config](#git-config) |
 
 Note : For all git Cmd you need to install git on your local machine.
 
@@ -78,7 +79,7 @@ Note : For all git Cmd you need to install git on your local machine.
       ```
 
 
-3. ### git status
+4. ### git status
 
 
    This cmd returns the current state of the repository.
@@ -104,6 +105,27 @@ Note : For all git Cmd you need to install git on your local machine.
 
       ```
 
+
+5. ### git config
+
+
+   with GIT, There are many configrations and settings possible.
+   `git config` is how to assign this settings. 
+   Two important settings are user.name and user.email.  
+ 
+      1. **Set Global Username and Email in git config.**
+
+      ```git
+      iMac-Pro-2 git-command-practice $   git config --global user.name "AcousticKrishna"
+      iMac-Pro-2 git-command-practice $   git config --global user.email "acoustickrishna@gmail.com"
+      ```
+
+      2. **Set In Current Repository Username and Email in git config.**
+
+      ```git
+      iMac-Pro-2 git-command-practice $   git config user.name "AcousticKrishna"
+      iMac-Pro-2 git-command-practice $   git config user.email "acoustickrishna@gmail.com"
+      ```
      
    
 
